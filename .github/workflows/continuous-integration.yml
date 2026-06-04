@@ -2,12 +2,7 @@
 name: "Continuous Integration"
 
 on:
-  pull_request:
-    branches:
-      - "*.x"
-  push:
-    branches:
-      - "*.x"
+  workflow_dispatch: 
 
 jobs:
   roave_bc_check:
