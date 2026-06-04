@@ -20,10 +20,11 @@ jobs:
 
       - name: Install roave/backward-compatibility-check.
         run: composer require --dev roave/backward-compatibility-check
-        continue-on-error: true
+        
 
       - name: Run roave/backward-compatibility-check.
         run: vendor/bin/roave-backward-compatibility-check
+        continue-on-error: true
 
   phpunit:
     name: "PHPUnit"
